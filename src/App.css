@@ -1,0 +1,309 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background:#f4f7fb;
+}
+
+/* MAIN APP */
+
+.app{
+  min-height:100vh;
+  padding:40px 20px;
+  background:
+  radial-gradient(circle at top left,#dff6ff,#f4f7fb 40%);
+}
+
+/* CONTAINER */
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* TITLE */
+
+.sub-title{
+  color:#4b7bec;
+  font-size:14px;
+  margin-bottom:10px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.title{
+  font-size:60px;
+  color:#1e272e;
+  margin-bottom:40px;
+}
+
+.title span{
+  color:#4b7bec;
+}
+
+/* FORM */
+
+.form-box{
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  margin-bottom:35px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-top{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+  color:#576574;
+  font-size:14px;
+}
+
+.form-row{
+  display:flex;
+  gap:15px;
+}
+
+.form-row input{
+  flex:1;
+  padding:16px;
+  border:none;
+  border-radius:12px;
+  background:#eef2f7;
+  font-size:15px;
+  outline:none;
+}
+
+.form-row button{
+  width:180px;
+  border:none;
+  border-radius:12px;
+  background:#4b7bec;
+  color:white;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.form-row button:hover{
+  transform:translateY(-2px);
+  background:#3867d6;
+}
+
+/* STATS */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-bottom:35px;
+}
+
+.card{
+  background:white;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card p{
+  color:#8395a7;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.card h2{
+  font-size:50px;
+  color:#1e272e;
+}
+
+.active{
+  background:linear-gradient(135deg,#4b7bec,#6a89ff);
+}
+
+.active p,
+.active h2{
+  color:white;
+}
+
+/* TABLE */
+
+.table{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TABLE TOP */
+
+.table-top{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 25px;
+  background:#4b7bec;
+  color:white;
+  font-size:14px;
+}
+
+/* TABLE HEAD */
+
+.table-head{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 2fr;
+  padding:18px 25px;
+  background:#eef3ff;
+  color:#576574;
+  font-weight:bold;
+}
+
+/* ROW */
+
+.table-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 2fr;
+  align-items:center;
+  padding:20px 25px;
+  border-top:1px solid #edf0f5;
+  transition:0.3s;
+}
+
+.table-row:hover{
+  background:#f8fbff;
+}
+
+/* NAME */
+
+.name-box{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.line{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+}
+
+.pass{
+  background:#2ed573;
+}
+
+.fail{
+  background:#ff4757;
+}
+
+/* SCORE */
+
+.table-row h3{
+  font-size:28px;
+  color:#222f3e;
+}
+
+/* STATUS */
+
+.status{
+  padding:8px 16px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.pass-status{
+  background:#e8fff1;
+  color:#20bf6b;
+}
+
+.fail-status{
+  background:#ffecec;
+  color:#eb3b5a;
+}
+
+/* UPDATE */
+
+.update-box{
+  display:flex;
+  gap:10px;
+}
+
+.update-box input{
+  width:90px;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#eef2f7;
+  outline:none;
+}
+
+.update-box button{
+  border:none;
+  padding:10px 16px;
+  border-radius:10px;
+  background:#1e272e;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.update-box button:hover{
+  background:#000;
+}
+
+/* FOOTER */
+
+.footer{
+  text-align:center;
+  margin-top:30px;
+  color:#8395a7;
+  font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .title{
+    font-size:38px;
+  }
+
+  .form-row{
+    flex-direction:column;
+  }
+
+  .form-row button{
+    width:100%;
+    padding:16px;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .table-head{
+    display:none;
+  }
+
+  .table-row{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .update-box{
+    flex-direction:column;
+  }
+
+  .update-box input{
+    width:100%;
+  }
+}
