@@ -2,10 +2,16 @@
 
 # Author : Manpreet Kaur
 
-A modern React-based Student Scoreboard Dashboard built using **React** and **simple CSS**.
+A modern React-based Student Scoreboard Dashboard built using **React** and **simple CSS**.  
 This project allows users to add students, update scores, and automatically calculate statistics like total students, passed students, and average score.
 
----
+***
+
+# Live Demo
+
+[student-scoreboard](https://student-score-board.netlify.app/)
+
+***
 
 # Features
 
@@ -19,7 +25,7 @@ This project allows users to add students, update scores, and automatically calc
 * Modern UI using only CSS
 * Built using a single React component
 
----
+***
 
 # Technologies Used
 
@@ -28,18 +34,18 @@ This project allows users to add students, update scores, and automatically calc
 * CSS3
 * Vite
 
----
+***
 
 # Project Structure
 
 ```txt
 src/
- ├── App.jsx
- ├── App.css
- └── main.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
 ```
 
----
+***
 
 # Installation
 
@@ -49,7 +55,7 @@ src/
 git clone <repository-link>
 ```
 
----
+***
 
 ## 2. Open Project Folder
 
@@ -57,7 +63,7 @@ git clone <repository-link>
 cd project-name
 ```
 
----
+***
 
 ## 3. Install Dependencies
 
@@ -65,7 +71,7 @@ cd project-name
 npm install
 ```
 
----
+***
 
 ## 4. Run the Project
 
@@ -73,7 +79,7 @@ npm install
 npm run dev
 ```
 
----
+***
 
 ## 5. Open in Browser
 
@@ -81,7 +87,7 @@ npm run dev
 http://localhost:5173
 ```
 
----
+***
 
 # Main Functionalities
 
@@ -94,14 +100,14 @@ Users can enter:
 
 and click the **ADD** button.
 
----
+***
 
 ## Pass / Fail Detection
 
 * Score >= 40 → PASS
 * Score < 40 → FAIL
 
----
+***
 
 ## Statistics
 
@@ -111,13 +117,13 @@ The dashboard automatically updates:
 * Passed Students
 * Average Score
 
----
+***
 
 ## Update Score
 
 Users can edit scores dynamically from the table.
 
----
+***
 
 # React Concepts Used
 
@@ -128,7 +134,7 @@ Users can edit scores dynamically from the table.
 * Array map()
 * Dynamic Rendering
 
----
+***
 
 # CSS Features Used
 
@@ -140,7 +146,7 @@ Users can edit scores dynamically from the table.
 * Shadows
 * Media Queries
 
----
+***
 
 # Responsive Design
 
@@ -150,7 +156,7 @@ The website is responsive and works on:
 * Tablet
 * Mobile Devices
 
----
+***
 
 # Future Improvements
 
@@ -164,7 +170,7 @@ Possible future enhancements:
 * Authentication System
 * Charts and Analytics
 
----
+***
 
 # Author : Manpreet Kaur
 
